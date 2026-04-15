@@ -46,3 +46,6 @@ ggplot(data, aes(x = timestamp, y = comments)) +
     y = "Number of Comments"
   ) +
   theme_minimal()
+
+# 7. Optional: Save data snapshot for reproducibility
+write.csv(data, "reddit_timing_data.csv", row.names = FALSE)
